@@ -26,11 +26,11 @@ public class FirstLab {
 
     @BeforeMethod
     public void preconditions() {
-//        chromeDriver.get(baseUrl);
+        chromeDriver.get(baseUrl);
     }
 
     @Test
-    public void testFooterExists() {
+    public void testContentExists() {
         WebElement content = chromeDriver.findElement(org.openqa.selenium.By.id("content"));
         org.testng.Assert.assertNotNull(content);
     }
